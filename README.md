@@ -1,6 +1,9 @@
 # Development at Crema
 
+## Table of Contents
+
 - [Development at Crema](#development-at-crema)
+  - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Golden Rule](#golden-rule)
   - [Agile](#agile)
@@ -12,20 +15,26 @@
   - [Source Control](#source-control)
     - [Branching Strategy](#branching-strategy)
   - [Testing](#testing)
-  - [Code Reviews](#code-reviews)
+  - [Code / PR Reviews](#code--pr-reviews)
   - [Documentation](#documentation)
   - [Communication](#communication)
-    - [With Developers](#with-developers)
-    - [With Product Managers](#with-product-managers)
-    - [With Designers](#with-designers)
-    - [With Test Engineers](#with-test-engineers)
-    - [With Stakeholders](#with-stakeholders)
+    - [Internal](#internal)
+      - [Developers](#developers)
+      - [Product Managers](#product-managers)
+      - [Designers](#designers)
+      - [Test Engineers](#test-engineers)
+    - [External](#external)
+      - [Stakeholders](#stakeholders)
   - [Workflow](#workflow)
+    - [Sprint Kickoffs](#sprint-kickoffs)
+    - [Demos](#demos)
+    - [Retrospectives](#retrospectives)
   - [Continuous Integration / Continuous Deployment](#continuous-integration--continuous-deployment)
   - [Security Practices](#security-practices)
   - [Performance](#performance)
-  - [New projects](#new-projects)
-    - [Template Repos](#template-repos)
+  - [Engagements](#engagements)
+    - [Onboarding](#onboarding)
+    - [Offboarding](#offboarding)
 
 ## Introduction
 
@@ -45,7 +54,7 @@ Use common sense, talk to your team, find agreement. These are just guidelines.
 
 ## Agile
 
-At Crema we practice Agile methodology, here is a quick refresher on the core of this practice. These ideas were first captured in the Agile Manifesto, which outlines four core values and twelve guiding principles.
+At Crema we practice Agile methodology, here is the core of this practice. These ideas were first captured in the Agile Manifesto, which outlines four core values and twelve guiding principles.
 
 Agile is an adaptive, people-focused approach to software development, rooted in iterative progress, flexible responses to change, and a customer-oriented mindset.
 
@@ -97,9 +106,25 @@ _Description of the branching strategy._
 
 _Description of testing philosophies, tools, and coverage expectations._
 
-## Code Reviews
+## Code / PR Reviews
 
-_Description of the code review process, criteria for review, and expectations._
+At Crema, we recognize the value of reviewing pull requests (PRs) as a crucial aspect of our development process. PR reviews allow us to maintain the high-quality code that our clients have come to expect from us. By conducting thorough reviews, we ensure that our software is not only functionally robust but also follows best practices for readability, maintainability, and performance.
+
+Reviewing PRs in a timely manner is a shared responsibility. We understand that our colleagues are waiting for our feedback to proceed with their tasks. Quick turnarounds on PR reviews help us maintain our project momentum, avoid code conflicts, and increase overall team productivity. It is our collective commitment to review and provide feedback on PRs as promptly as possible without compromising on the quality of our reviews.
+
+There are many ways to conduct a good code review, here's a suggested "pyramid" model for doing so. Focus on the base layers and aim to achieve the top of the pyramid:
+
+1. **Correct (Base of the Pyramid)**: This is the most fundamental level, where we verify that the code is functionally correct. Does it do what it's intended to do? We test it against the requirements, consider edge cases, and confirm that it meets the acceptance criteria.
+
+2. **Secure**: Here, we examine the code for any potential security vulnerabilities. We check that data is being handled securely and that there are no leaks or potential breaches. We consider things such as the principle of least privilege, ensuring that processes only have access to the resources they need.
+
+3. **Readable**: At this level, we ensure that the code is clear and easy to understand. We adhere to naming conventions and formatting rules, use clear comments where necessary, and maintain consistent coding styles. Code should not only be understandable to the author but to the entire team.
+
+4. **Elegant**: Here, we are interested in the architecture and design of the code. We aim for elegant solutions that are efficient, avoid redundancy, and show a deep understanding of the programming language and tools. The elegance of code is seen in its simplicity and the use of effective design patterns.
+
+5. **Altruist (Top of the Pyramid)**: Lastly, we review the code from an altruistic standpoint. Does the code contribute to the overall health of the codebase? Does it leave the codebase better than it was found? Altruistic code not only fulfills its own purpose but also considers its impact on existing code, making sure to minimize technical debt.
+
+We believe that every PR review is an opportunity for knowledge sharing and learning. It's a moment where we can constructively discuss different approaches and potential improvements. By leveraging this framework for PR reviews, we can continue delivering high-quality software while also promoting a culture of continuous learning and collaboration.
 
 ## Documentation
 
@@ -109,19 +134,29 @@ _Description of when and how to document code, including in-code comments and ex
 
 _Description of expected communication practices within the development team, other craft teams, and with stakeholders._
 
-### With Developers
+### Internal
 
-### With Product Managers
+#### Developers
 
-### With Designers
+#### Product Managers
 
-### With Test Engineers
+#### Designers
 
-### With Stakeholders
+#### Test Engineers
+
+### External
+
+#### Stakeholders
 
 ## Workflow
 
 _Description of the development workflow, including any regular meetings or ceremonies._
+
+### Sprint Kickoffs
+
+### Demos
+
+### Retrospectives
 
 ## Continuous Integration / Continuous Deployment
 
@@ -135,8 +170,12 @@ _Description of security best practices for code development._
 
 _Description of performance expectations and how performance should be considered during development._
 
-## New projects
+## Engagements
 
-_Description of things to consider when setting up a new project._
+### Onboarding
 
-### Template Repos
+_Description of things to consider when setting up a new product._
+
+### Offboarding
+
+_Description of things to consider when handing off a product._
