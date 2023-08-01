@@ -31,6 +31,10 @@
     - [Coverage Expectations](#coverage-expectations)
   - [Code / PR Reviews](#code--pr-reviews)
   - [Documentation](#documentation)
+    - [In-line code comments](#in-line-code-comments)
+    - [Markdown README files](#markdown-readme-files)
+    - [Diagrams with Mermaid](#diagrams-with-mermaid)
+    - [Architechtural decision records](#architechtural-decision-records)
   - [Communication](#communication)
     - [Internal](#internal)
       - [Developers](#developers)
@@ -189,9 +193,9 @@ While we strive for comprehensive testing, we also recognize the importance of m
 
 We leverage a variety of tools to create robust and comprehensive tests. Our toolbox includes, but is not limited to:
 
-- **Jest**: A popular JavaScript testing framework with a focus on simplicity. It allows us to write tests with an easy-to-understand syntax, and provides a wide range of features such as a full-featured expectation library, mock functions, etc.
+- **[Jest](https://jestjs.io/)**: A popular JavaScript testing framework with a focus on simplicity. It allows us to write tests with an easy-to-understand syntax, and provides a wide range of features such as a full-featured expectation library, mock functions, etc.
 
-- **Cypress**: A powerful end-to-end testing tool for web applications. With Cypress, we can create tests that interact with our applications just like a real user would, giving us confidence that our applications work correctly in real-world conditions.
+- **[Cypress](https://www.cypress.io/)**: A powerful end-to-end testing tool for web applications. With Cypress, we can create tests that interact with our applications just like a real user would, giving us confidence that our applications work correctly in real-world conditions.
 
 ### Coverage Expectations
 
@@ -223,7 +227,27 @@ We believe that every PR review is an opportunity for knowledge sharing and lear
 
 ## Documentation
 
-_Description of when and how to document code, including in-code comments and external documentation._
+At Crema, we deeply understand the value of good documentation. We view it not only as a tool to facilitate the current development process, but as a crucial component in making our code understandable for future readers. This includes new team members, developers from other teams, or even our future selves. Our approach to documentation is centered around the principles of clarity, comprehensiveness, and relevance, as we aim to create a written record that enhances our code and benefits all who interact with it.
+
+Documentation is as crucial as code itself, promoting understanding, maintenance, and extensibility. It's pivotal for successful onboarding and effective codebase iteration. We advocate for self-explanatory code through clear names and structures. When needed, comments provide context or explain less obvious decisions. Documentation should be created concurrently with coding to capture the writer's insights accurately and immediately. The focus of good documentation extends beyond what the code does to why it does it. It explains decision-making, rejected alternatives, and broader context, assisting future comprehension.
+
+Some ideas for inspiration when writing documentation:
+
+### In-line code comments
+
+These are written directly in the source code, usually on the line above the code they're describing. They provide immediate, focused insight into what the code is doing or why certain decisions were made. They're particularly useful for complex or non-obvious pieces of code.
+
+### Markdown README files
+
+A readme file provides an overview of the module (component, project, etc). It usually includes information about the module's purpose, how to use it, and other helpful resources. Markdown syntax places the content in a readable way and integrates nicely with GitHub.
+
+### Diagrams with Mermaid
+
+Mermaid is a tool that generates diagrams and flowcharts using text and script. It's a useful tool for visualizing, maintaining and explaining complex processes or structures within your application. Diagrams can be particularly helpful in illustrating relationships between components, data flow, and architectural design. Mermaid diagrams are rendered as pictures inside markdown files on GitHub. Win win.
+
+### Architechtural decision records
+
+ADRs are documents that capture important architectural decisions, along with their context and consequences. They're an effective way of documenting why certain decisions were made, making it easier for future team members to understand the reasoning behind specific design and architectural choices. This aids in maintaining architectural consistency and quality as a project evolves over time.
 
 ## Communication
 
