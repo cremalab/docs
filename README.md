@@ -31,9 +31,9 @@
     - [Coverage Expectations](#coverage-expectations)
   - [Code / PR Reviews](#code--pr-reviews)
   - [Documentation](#documentation)
-    - [In-line code comments](#in-line-code-comments)
+    - [Code comments](#code-comments)
     - [Markdown README files](#markdown-readme-files)
-    - [Diagrams with Mermaid](#diagrams-with-mermaid)
+      - [Diagrams with Mermaid](#diagrams-with-mermaid)
     - [Architechtural decision records](#architechtural-decision-records)
   - [Communication](#communication)
     - [Internal](#internal)
@@ -49,7 +49,7 @@
     - [Retrospectives](#retrospectives)
     - [Storypointing](#storypointing)
     - [Backlog Grooming](#backlog-grooming)
-  - [Continuous Integration / Continuous Deployment](#continuous-integration--continuous-deployment)
+  - [Continuous Integration / Continuous Deployment (CI/CD)](#continuous-integration--continuous-deployment-cicd)
   - [Security Practices](#security-practices)
   - [Performance](#performance)
   - [Engagements](#engagements)
@@ -231,9 +231,9 @@ At Crema, we deeply understand the value of good documentation. We view it not o
 
 Documentation is as crucial as code itself, promoting understanding, maintenance, and extensibility. It's pivotal for successful onboarding and effective codebase iteration. We advocate for self-explanatory code through clear names and structures. When needed, comments provide context or explain less obvious decisions. Documentation should be created concurrently with coding to capture the writer's insights accurately and immediately. The focus of good documentation extends beyond what the code does to why it does it. It explains decision-making, rejected alternatives, and broader context, assisting future comprehension.
 
-Some ideas for inspiration when writing documentation:
+Here are some options we have utilized for documentation before:
 
-### In-line code comments
+### Code comments
 
 These are written directly in the source code, usually on the line above the code they're describing. They provide immediate, focused insight into what the code is doing or why certain decisions were made. They're particularly useful for complex or non-obvious pieces of code.
 
@@ -241,7 +241,7 @@ These are written directly in the source code, usually on the line above the cod
 
 A readme file provides an overview of the module (component, project, etc). It usually includes information about the module's purpose, how to use it, and other helpful resources. Markdown syntax places the content in a readable way and integrates nicely with GitHub.
 
-### Diagrams with Mermaid
+#### Diagrams with Mermaid
 
 Mermaid is a tool that generates diagrams and flowcharts using text and script. It's a useful tool for visualizing, maintaining and explaining complex processes or structures within your application. Diagrams can be particularly helpful in illustrating relationships between components, data flow, and architectural design. Mermaid diagrams are rendered as pictures inside markdown files on GitHub. Win win.
 
@@ -269,21 +269,35 @@ _Description of expected communication practices within the development team, ot
 
 ## Workflow
 
-_Description of the development workflow, including any regular meetings or ceremonies._
+At Crema, we have adopted Scrum as our default methodology, but also recognize that each team is unique. As such, we have crafted our own flavor of Scrum—tailored to our culture, our clients, and our quest for continuous improvement. Our Scrum approach includes several key ceremonies designed to maximize communication, collaboration, and productivity.
 
 ### Sprint Kickoffs
 
+Our sprints start with a Kickoff meeting. During this session, the team reviews the planned work for the sprint, discussing the goals, priorities, and potential challenges. This ensures that everyone begins the sprint with a clear understanding of what needs to be accomplished and how we plan to get there.
+
 ### Demos
+
+We regularly showcase our progress to stakeholders, demonstrating new features and updates. This allows us to gather immediate feedback and ensure that we're on the right track, delivering value with every increment.
 
 ### Retrospectives
 
+Retrospectives are held at the end of every sprint. In these meetings, the team reflects on the past sprint, discussing what went well, what could be improved, and how to implement these improvements in the next sprint. This iterative process is a key part of our commitment to continuous improvement.
+
 ### Storypointing
+
+Storypointing is an essential part of our planning process. We assign points to user stories based on their size, complexity, risk, and effort required. This helps us gauge the amount of work needed for a sprint and assists in effectively managing our resources.
 
 ### Backlog Grooming
 
-## Continuous Integration / Continuous Deployment
+Regular backlog grooming sessions ensure our backlog remains organized, relevant, and up-to-date. During these meetings, we review and reprioritize user stories, break down larger stories into manageable tasks, and ensure that the backlog aligns with the project's goals and priorities.
 
-_Description of CI/CD practices, including any tools GitHub Actions, etc._
+## Continuous Integration / Continuous Deployment (CI/CD)
+
+We try to leverage automation as much as possible in our development process at Crema. It enhances efficiency, reduces errors, and enables us to deliver value to our clients more quickly and reliably. This is where Continuous Integration and Continuous Deployment (CI/CD) come into play. CI/CD pipelines automate tasks like building, testing, and deploying our applications, ensuring a smoother, faster, and more reliable delivery process.
+
+We primarily leverage GitHub Actions for our CI/CD needs. This tool allows us to create customized workflows directly in our repositories. It integrates with the GitHub interface we're already familiar with, providing automation capabilities that streamline our workflow and support consistent releases.
+
+Different clients we work with might already have their pipelines defined, in which case, we're happy to utilize and support throughout an engagement.
 
 ## Security Practices
 
