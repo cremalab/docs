@@ -12,9 +12,9 @@
       - [Agile Principles](#agile-principles)
   - [Coding Standards](#coding-standards)
     - [Simplicity](#simplicity)
-    - [Building Quality](#building-quality)
-    - [Readability, Elegance, and Pragmatism](#readability-elegance-and-pragmatism)
-    - [Altruistic Code and Continuous Learning](#altruistic-code-and-continuous-learning)
+    - [Quality](#quality)
+    - [Readability](#readability)
+    - [Continuous Learning](#continuous-learning)
     - [Code Reviews and Collaboration](#code-reviews-and-collaboration)
   - [Development Tools 🛠️](#development-tools-️)
     - [Integrated Development Environments (IDEs) 👩‍💻](#integrated-development-environments-ides-)
@@ -113,19 +113,19 @@ Our coding standards and development practices at Crema are a rich blend of phil
 
 ### Simplicity
 
-Simplicity, the heart of our coding standards. We strive to eliminate waste, which includes unnecessary code, delayed feedback, and excessive processes. By creating straightforward solutions and keeping our code and processes uncluttered, we maintain focus on delivering valuable software to our clients efficiently.
+Simplicity, the heart of our coding standards. We strive to eliminate waste, which includes unnecessary code, delayed feedback, and excessive processes. By creating straightforward solutions and keeping our code and processes uncluttered, we maintain focus on delivering valuable software to our clients efficiently. We appreciate the concept of "deep" modules, simple interfaces that encapsulate complex implementations.
 
-### Building Quality
+### Quality
 
-We appreciate the concept of "deep" modules, simple interfaces that encapsulate complex implementations. We build quality into our software from the start, guided by the pricinple that we should leave the codebase better than we found it. We combat complexity, keep modules/functions/classes focused, and do our best to write code that is robust, secure, and easy to understand.
+We build quality into our software from the start, guided by the pricinple that we should leave the codebase better than we found it. We combat complexity, keep modules/functions/classes focused, and do our best to write code that is robust, secure, and easy to understand. The code we write is supported by automated integration tests and code analysis tools.
 
-### Readability, Elegance, and Pragmatism
+### Readability
 
 Our code should be readable not only to the author but to the entire team. This readability, together with elegance and effective use of design patterns, contributes to a codebase that is easy to maintain and extend over time. We embrace the idea of being a catalyst for change, seeking to continuously improve and adapt to evolving requirements and environments.
 
-### Altruistic Code and Continuous Learning
+### Continuous Learning
 
-Our code is altruistic; it not only fulfills its purpose but also considers its impact on existing code and future developments. We adopt a continuous learning mindset, viewing every project as an opportunity to improve our practices and the codebase.
+Our code is altruistic; it not only fulfills its purpose but also considers its impact on existing code and future developments. We adopt a continuous learning mindset, viewing every project and iteration as an opportunity to improve our practices and the codebase.
 
 ### Code Reviews and Collaboration
 
@@ -139,7 +139,7 @@ At Crema, we understand that the tools we use significantly impact the quality o
 
 ### Integrated Development Environments (IDEs) 👩‍💻
 
-We believe that a powerful IDE can dramatically enhance our productivity and code quality. We encourage our developers to use an IDE that best suits their workflow and the specific needs of each project. The choice of IDE is flexible and is based on personal preference, project requirements, and the technologies in use. That said, we commonly use VS Code.
+We believe that a powerful IDE can dramatically enhance our productivity and code quality. We encourage our developers to use an IDE that best suits their workflow and the specific needs of each project. The choice of IDE is flexible and is based on personal preference, project requirements, and the technologies in use. That said, we commonly use [VS Code](https://code.visualstudio.com/).
 
 ### Linters + Formatters 🧹
 
@@ -181,7 +181,7 @@ At Crema, we firmly believe in the value and necessity of testing. A well-tested
 
 ### Testing Philosophy
 
-Our testing philosophy is based on the principle that every piece of functionality that matters should be tested in some way. This doesn't necessarily translate to achieving a certain percentage of test coverage; instead, we focus on the critical parts of our applications and make sure that they behave as expected under a variety of conditions.
+Our testing philosophy is based on the principle that every piece of functionality should be tested in some way. This doesn't necessarily translate to achieving a certain percentage of test coverage; instead, we focus on the critical parts of our applications and make sure that they behave as expected under a variety of conditions.
 
 While we strive for comprehensive testing, we also recognize the importance of maintaining a balance. Not all code demands the same level of testing, and it's essential to allocate our testing resources where they can bring the most value.
 
@@ -207,7 +207,7 @@ At Crema, we recognize the value of reviewing pull requests (PRs) as a crucial a
 
 Reviewing PRs in a timely manner is a shared responsibility. We understand that our colleagues are waiting for our feedback to proceed with their tasks. Quick turnarounds on PR reviews help us maintain our project momentum, avoid code conflicts, and increase overall team productivity. It is our collective commitment to review and provide feedback on PRs as promptly as possible without compromising on the quality of our reviews.
 
-There are many ways to conduct a good code review, here's a suggested "pyramid" model for doing so. Focus on the base layers and aim to achieve the top of the pyramid:
+There are many ways to conduct a good code review, here's one pyramid model that has worked over the years. Focus on the base layers and aim to achieve the top of the pyramid:
 
 1. **Correct (Base of the Pyramid)**: This is the most fundamental level, where we verify that the code is functionally correct. Does it do what it's intended to do? We test it against the requirements, consider edge cases, and confirm that it meets the acceptance criteria.
 
