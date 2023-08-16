@@ -51,10 +51,15 @@
     - [Backlog Grooming](#backlog-grooming)
   - [Continuous Integration / Continuous Deployment (CI/CD)](#continuous-integration--continuous-deployment-cicd)
   - [Security Practices](#security-practices)
-  - [Performance](#performance)
+    - [Encrypting Data in Transit](#encrypting-data-in-transit)
+    - [OWASP Top 10](#owasp-top-10)
+    - [Basic Security Checklist](#basic-security-checklist)
+  - [Performance Practices](#performance-practices)
+    - [Building for Performance](#building-for-performance)
+    - [Performance Improvements](#performance-improvements)
   - [Engagements](#engagements)
-    - [Onboarding](#onboarding)
-    - [Offboarding](#offboarding)
+    - [Onboarding: Welcoming New Clients](#onboarding-welcoming-new-clients)
+    - [Offboarding: Seamless Handoffs to Clients](#offboarding-seamless-handoffs-to-clients)
 
 ## Introduction
 
@@ -301,18 +306,58 @@ Different clients we work with might already have their pipelines defined, in wh
 
 ## Security Practices
 
-_Description of security best practices for code development._
+At Crema, the security of our software is not just an afterthought—it's integral to the development process. Protecting our clients' data and ensuring the robustness of our digital solutions are of highest importance. Adhering to best security practices is not just about protecting against threats; it's about building trust and credibility.
 
-## Performance
+### Encrypting Data in Transit
 
-_Description of performance expectations and how performance should be considered during development._
+We ensure that all data in transit is encrypted using modern encryption standards. This ensures that even if the data is intercepted, it remains unreadable and secure.
+
+### OWASP Top 10
+
+One of our guiding reference points in software security is the OWASP Top 10—a standard list of the most critical web application vulnerabilities. Our developers are well-acquainted with these vulnerabilities, and we actively test our software against them. By doing so, we preemptively address potential threats, ensuring our applications are resilient against the most common and impactful security risks.
+
+Through these measures, among others, we consistently work to ensure that every piece of software we deliver is not only functional but securely fortified against potential threats.
+
+### Basic Security Checklist
+
+- [x] Application only uses encrypted communication (e.g. HTTPS)
+- [x] A strict CSP header has been applied to the HTML document on the web server
+- [x] User input has been escaped for XSS (React does it by default)
+- [x] No access keys have been stored on the codebase (if so, remove them from repo and generate new keys)
+
+## Performance Practices
+
+Performance is a vital aspect of user experience, and at Crema, it's embedded in our development practices. But, while we are always committed to delivering well-performing solutions, we are equally pragmatic about how we approach performance optimizations.
+
+### Building for Performance
+
+From the onset of development, we prioritize clean, efficient code to provide our users with responsive, seamless experiences. This means selecting the right tools, frameworks, and architectures that are known for their performance advantages.
+
+### Performance Improvements
+
+Performance optimization, while essential, can consume significant resources. We firmly believe in the saying, "Don't optimize what you can't measure." Before diving into performance improvements, we always set clear, measurable benchmarks. This ensures we can quantify the impact of our optimizations, providing real, tangible value rather than chasing after arbitrary speed gains.
+
+In doing so, we strike the right balance—ensuring our solutions are both robust in performance and efficient in development. By always having a measurable goal in sight, we channel our efforts effectively and ensure that every optimization has a meaningful impact on the overall user experience.
 
 ## Engagements
 
-### Onboarding
+Engaging with our clients is a dynamic journey. At Crema, we've established onboarding and offboarding processes to ensure smooth transitions at both the start and conclusion of our engagements. These processes are not just about procedures; they're about cultivating understanding, setting expectations, and ensuring the continued success of the projects we've nurtured.
 
-_Description of things to consider when setting up a new product._
+### Onboarding: Welcoming New Clients
 
-### Offboarding
+The onboarding process is pivotal. It sets the tone for our entire engagement and paves the way for a successful collaboration.
 
-_Description of things to consider when handing off a product._
+- **Sales Brief**: This document outlines all the conversations that happened prior to the contracts being signed. It holds context about the sales cycle, expected outcomes, pain points, etc. It's a great place for the production team to start wrapping their heads around the work ahead of them.
+- **Product Lab**: This initial workshop introduces the teams, identifies problem statements, ideate on the possible solutions, sets project expectations, and establishes primary communication channels.
+- **Existing Client Documentation**: Any relevant documentation, like business logic, legacy code, design files, API docs, is shared to ensure we have all the information we need.
+
+### Offboarding: Seamless Handoffs to Clients
+
+Concluding our engagement does not signify the end of a project's life. Instead, it's about empowering our clients to take the reins with confidence.
+
+- **Project Handover**: We provide a comprehensive package that includes all developed code, assets, designs, and documentation, organized and annotated for clarity.
+<!-- - **Training Sessions**: Custom training sessions are conducted to familiarize the client's team with the delivered systems, ensuring they can operate and manage them efficiently.
+- **Feedback Loop**: We hold sessions to gather feedback, learning from the engagement and improving for the future.
+- **Post-Engagement Support**: While the main engagement might be over, we're always available for any follow-up questions or support, ensuring a smooth transition for all involved. -->
+
+With these ceremonies and deliverables, we aim to provide our clients with not just a product but a holistic experience, ensuring that every stage of the journey is marked by clarity, understanding, and collaboration.
