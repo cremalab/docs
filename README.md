@@ -6,6 +6,7 @@
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Golden Rule](#golden-rule)
+  - [Problem-solving Mindset](#problem-solving-mindset)
   - [Agile](#agile)
     - [Agile Manifesto](#agile-manifesto)
       - [Agile Values](#agile-values)
@@ -75,7 +76,11 @@ Let's continue to collaborate, innovate, and create extraordinary digital produc
 
 ## Golden Rule
 
-Use common sense, talk to your team, find agreement. These are just guidelines.
+At Crema, our relationships with clients, partners, and each other are built on mutual respect and understanding. This is why we adhere to the Golden Rule: Treat others the way you'd like to be treated. It's a simple yet profound guideline that underscores every decision and interaction.
+
+## Problem-solving Mindset
+
+We are a consultancy agency; our clients seek us out for our expertise and perspective. They come to us with problems, trusting our ability to provide solutions. And while challenges are a natural part of any project, our true value lies in our resourcefulness and capacity to navigate adversity. As a principle, if a problem must be escalated to a client, we ensure we're not just delivering the issue. Instead, we come equipped with options, trade-offs, and recommendations. By doing so, we underscore our commitment to being partners in success, not just problem identifiers.
 
 ## Agile
 
